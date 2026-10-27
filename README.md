@@ -19,7 +19,7 @@
 
 <div align="center">
 
-<h2>📌 Título do Projeto</h2>
+<h2> Título do Projeto</h2>
 
 <h3><a href="https://github.com/vitorandao/Aplicacao-do-Algoritmo-Bubble-Sort">Aplicacao-do-Algoritmo-Bubble-Sort</a></h3>
 
@@ -31,18 +31,18 @@ Atividade prática em grupo que aplica o algoritmo de ordenação <strong>Bubble
 
 <div align="center">
 
-<h2>🎓 Disciplina e Professora</h2>
+<h2> Disciplina e Professora</h2>
 
 </div>
 
 <table>
 <tr>
 <td align="center" width="50%">
-<h3>📚 Disciplina</h3>
+<h3> Disciplina</h3>
 Algoritmos e Pensamento Computacional
 </td>
 <td align="center" width="50%">
-<h3>👩‍🏫 Professora</h3>
+<h3> Professora</h3>
 Karla Roberto
 </td>
 </tr>
@@ -52,7 +52,7 @@ Karla Roberto
 
 <div align="center">
 
-<h2>👥 Integrantes</h2>
+<h2> Integrantes</h2>
 
 </div>
 
@@ -67,7 +67,7 @@ Karla Roberto
 
 <div align="center">
 
-<h2>🛒 Problema do Cotidiano Escolhido</h2>
+<h2> Problema do Cotidiano Escolhido</h2>
 
 </div>
 
@@ -99,28 +99,28 @@ Com os preços desordenados, achar o item mais barato ou o mais caro exige olhar
 
 <div align="center">
 
-<h2>🎯 Objetivo da Aplicação</h2>
+<h2> Objetivo da Aplicação</h2>
 
 </div>
 
 <table>
 <tr>
 <td align="center" width="50%">
-<h3>📦 Armazenar</h3>
+<h3> Armazenar</h3>
 Guardar os preços de 10 produtos em um array, junto com os nomes.
 </td>
 <td align="center" width="50%">
-<h3>🫧 Ordenar</h3>
+<h3> Ordenar</h3>
 Organizar os preços em ordem crescente com o Bubble Sort, sem funções prontas como <code>qsort()</code>.
 </td>
 </tr>
 <tr>
 <td align="center">
-<h3>👀 Mostrar</h3>
+<h3> Mostrar</h3>
 Exibir os dados antes e depois da ordenação, informando o critério adotado.
 </td>
 <td align="center">
-<h3>📊 Analisar</h3>
+<h3> Analisar</h3>
 Apresentar o produto mais barato, o mais caro e o total de comparações e trocas.
 </td>
 </tr>
@@ -130,7 +130,7 @@ Apresentar o produto mais barato, o mais caro e o total de comparações e troca
 
 <div align="center">
 
-<h2>🫧 Como Funciona o Bubble Sort</h2>
+<h2> Como Funciona o Bubble Sort</h2>
 
 O <strong>Bubble Sort</strong> (ordenação por bolha) compara <strong>pares de elementos vizinhos</strong> e troca de posição os que estão fora de ordem. A cada passada, o maior valor restante "sobe" como uma bolha até o final do array.
 
@@ -159,7 +159,7 @@ Array inicial `[5, 3, 8, 1]`:
 </details>
 
 <details>
-<summary><strong>💻 Visualizar trecho principal do código</strong></summary>
+<summary><strong> Visualizar trecho principal do código</strong></summary>
 
 <br/>
 
@@ -193,12 +193,12 @@ No código completo, o **nome do produto** também é trocado junto com o preço
 
 <div align="center">
 
-<h2>⚙️ Como Compilar e Executar</h2>
+<h2> Como Compilar e Executar</h2>
 
 </div>
 
 <details open>
-<summary><strong>🚀 Visualizar compilação e execução</strong></summary>
+<summary><strong> Visualizar compilação e execução</strong></summary>
 
 <br/>
 
@@ -231,7 +231,7 @@ Os dados já estão definidos no código-fonte, então não é preciso digitar n
 
 <div align="center">
 
-<h2>🖥️ Exemplo de Entrada e Saída</h2>
+<h2> Exemplo de Entrada e Saída</h2>
 
 </div>
 
@@ -242,7 +242,7 @@ precos = {27.90, 8.49, 16.75, 5.29, 4.99, 7.89, 4.29, 18.50, 3.99, 5.49}
 </pre>
 
 <details open>
-<summary><strong>📟 Visualizar saída no terminal</strong></summary>
+<summary><strong> Visualizar saída no terminal</strong></summary>
 
 <br/>
 
@@ -289,7 +289,7 @@ Produto mais caro:   Arroz 5kg (R$ 27.90)
 
 <div align="center">
 
-<h2>🧰 Tecnologias e Ferramentas</h2>
+<h2> Tecnologias e Ferramentas</h2>
 
 <img src="https://skillicons.dev/icons?i=c,git,github,vscode,linux&theme=dark" alt="Tecnologias do projeto"/>
 
@@ -309,7 +309,7 @@ Produto mais caro:   Arroz 5kg (R$ 27.90)
 
 <div align="center">
 
-<h2>📝 Considerações Finais</h2>
+<h2> Considerações Finais</h2>
 
 </div>
 
@@ -318,7 +318,7 @@ O desenvolvimento permitiu praticar, em um problema concreto, os conteúdos da d
 O algoritmo é simples e didático, mas com complexidade O(n²) não é indicado para grandes volumes de dados. Para os 10 produtos deste exemplo, atende bem ao objetivo.
 
 <details>
-<summary><strong>🔮 Visualizar melhorias futuras</strong></summary>
+<summary><strong> Visualizar melhorias futuras</strong></summary>
 
 <br/>
 
@@ -332,7 +332,7 @@ O algoritmo é simples e didático, mas com complexidade O(n²) não é indicado
 
 <div align="center">
 
-<h2>👨‍💻 Desenvolvedores</h2>
+<h2> Desenvolvedores</h2>
 
 <strong>Nathaniel • João Lima • Caetano • Vitor</strong>
 
