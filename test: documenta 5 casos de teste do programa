@@ -1,0 +1,24 @@
+Teste 1 — Lista de produtos desordenada
+Entrada: preços em ordem aleatória.
+Objetivo: verificar se o algoritmo ordena os preços do menor para o maior.
+Resultado esperado: produtos ordenados corretamente, mantendo seus respectivos nomes associados aos preços.
+
+Teste 2 — Lista já ordenada
+Entrada: preços em ordem crescente.
+Objetivo: verificar se o algoritmo reconhece que a lista já está ordenada.
+Resultado esperado: nenhuma troca é realizada e a parada antecipada é acionada na primeira passada.
+
+Teste 3 — Lista em ordem decrescente
+Entrada: preços do maior para o menor.
+Objetivo: verificar o funcionamento do algoritmo em um cenário desfavorável.
+Resultado esperado: preços ordenados corretamente em ordem crescente, com várias trocas.
+
+Teste 4 — Produtos com preços iguais
+Entrada: dois ou mais produtos com o mesmo preço.
+Objetivo: verificar se o algoritmo mantém os preços iguais sem realizar trocas desnecessárias entre eles.
+Resultado esperado: preços ordenados corretamente, sem trocar produtos cujos preços são iguais.
+
+Teste 5 — Verificação das comparações e trocas
+Entrada: lista de produtos desordenada.
+Objetivo: verificar se os contadores registram corretamente as comparações e as trocas realizadas.
+Resultado esperado: os contadores apresentam valores compatíveis com a execução do algoritmo, e a lista termina ordenada.
