@@ -1,0 +1,81 @@
+#include <stdio.h>
+
+#define TAMANHO 10
+
+void exibir(float precos[]) {
+    int i;
+
+    for (i = 0; i < TAMANHO; i++) {
+        printf("R$ %.2f\n", precos[i]);
+    }
+}
+
+void bubbleSort(float precos[]) {
+    int i, j;
+    int trocas;
+    int comparacoes = 0;
+    int totalTrocas = 0;
+    float aux;
+
+    for (i = 0; i < TAMANHO - 1; i++) {
+        trocas = 0;
+
+        for (j = 0; j < TAMANHO - 1 - i; j++) {
+            comparacoes++;
+
+            if (precos[j] > precos[j + 1]) {
+                aux = precos[j];
+                precos[j] = precos[j + 1];
+                precos[j + 1] = aux;
+
+                trocas++;
+                totalTrocas++;
+            }
+        }
+
+        if (trocas == 0) {
+            break;
+        }
+    }
+
+    printf("Comparacoes: %d\n", comparacoes);
+    printf("Trocas: %d\n", totalTrocas);
+}
+
+void testar(int numero, float precos[]) {
+    printf("\n===== TESTE %d =====\n", numero);
+
+    printf("Precos antes da ordenacao:\n");
+    exibir(precos);
+
+    bubbleSort(precos);
+
+    printf("Precos depois da ordenacao:\n");
+    exibir(precos);
+}
+
+int main() {
+    float teste1[TAMANHO] =
+        {27.90, 8.49, 16.75, 5.29, 4.99,
+         7.89, 4.29, 18.50, 3.99, 5.49};
+
+    float teste2[TAMANHO] =
+        {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+    float teste3[TAMANHO] =
+        {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+
+    float teste4[TAMANHO] =
+        {5, 5, 5, 5, 5, 5, 5, 5, 5, 5};
+
+    float teste5[TAMANHO] =
+        {3, 1, 2, 1, 3, 2, 1, 3, 2, 1};
+
+    testar(1, teste1);
+    testar(2, teste2);
+    testar(3, teste3);
+    testar(4, teste4);
+    testar(5, teste5);
+
+    return 0;
+}
