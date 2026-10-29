@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <string.h>
+
+#define TAMANHO 10
+
+void exibir(const char nomes[][20], const float precos[], int n) {
+    for (int i = 0; i < n; i++) {
+        printf(" %2d. %-18s R$ %7.2f\n", i + 1, nomes[i], precos[i]);
+    }
+}
+
+int main(void) {
+    char nomes[TAMANHO][20] = {
+        "Arroz 5kg", "Feijao 1kg", "Cafe 500g", "Leite 1L", "Acucar 1kg",
+        "Oleo de soja", "Macarrao 500g", "Sabao em po", "Biscoito", "Farinha 1kg"
+    };
+
+    float precos[TAMANHO] = {
+        27.90f, 8.49f, 16.75f, 5.29f, 4.99f,
+        7.89f, 4.29f, 18.50f, 3.99f, 5.49f
+    };
+
+    int comparacoes = 0;
+    int trocas = 0;
+
+    printf("--- ANTES da ordenacao ---\n");
+    exibir(nomes, precos, TAMANHO);
+
+    for (int i = 0; i < TAMANHO - 1; i++) {
+        int houve_troca = 0;
+
+        for (int j = 0; j < TAMANHO - i - 1; j++) {
+            comparacoes++;
+
+            if (precos[j] > precos[j + 1]) {
+                float aux_preco = precos[j];
+                precos[j] = precos[j + 1];
+                precos[j + 1] = aux_preco;
+
+                char aux_nome[20];
+                strcpy(aux_nome, nomes[j]);
+                strcpy(nomes[j], nomes[j + 1]);
+                strcpy(nomes[j + 1], aux_nome);
+
+                trocas++;
+                houve_troca = 1;
+            }
+        }
+
+        if (houve_troca == 0) {
+            break;
+        }
+    }
+
+    printf("\n--- DEPOIS da ordenacao ---\n");
+    exibir(nomes, precos, TAMANHO);
+
+    printf("\nComparacoes: %d\n", comparacoes);
+    printf("Trocas: %d\n", trocas);
+
+    return 0;
+}
